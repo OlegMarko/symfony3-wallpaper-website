@@ -33,3 +33,8 @@ services:
     # AppBundle\Service\ExampleService:
     #     arguments:
     #         $someArgument: 'some_value'
+
+    app.command.wallpaper_setup:
+        class: AppBundle\Command\AppSetupWallpapersCommand
+        tags:
+            - { name: console.command }

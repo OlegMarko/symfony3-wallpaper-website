@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="row">
+        <h2>Top Wallpapers For Images Array 1</h2>
+
+        {% include 'home/best-in-category.html.twig' with { 'images': imgArray1 } %}
+    </div>
+
+    <div class="row">
+        <h2>Random Images</h2>
+        {% for image in randomisedImages %}
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="{{ asset('images') }}/{{ image }}" alt="{{ image }}">
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="row">
+        <h2>Top Wallpapers For Images Array 2</h2>
+
+        {% include 'home/best-in-category.html.twig' with { 'images': imgArray2 } %}
+    </div>
+
+    <div class="row">
+        <h2>Top Wallpapers For Images Array 3</h2>
+        {% include 'home/best-in-category.html.twig' with { 'images': imgArray3 } %}
+    </div>
+
+{% endblock %}
