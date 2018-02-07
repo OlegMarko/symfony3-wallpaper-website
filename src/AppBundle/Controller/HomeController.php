@@ -25,9 +25,9 @@ class HomeController extends Controller
         ];
 
         $img_array_3 = [
-            "pexels-photo-106606.jpeg",
-            "pexels-photo-389818.jpeg",
-            "pexels-photo-845225.jpeg"
+            "pexels-photo-458264.jpg",
+            "pexels-photo-131743.jpeg",
+            "pexels-photo-641130.jpeg"
         ];
 
         $images = array_merge($img_array_1, $img_array_2, $img_array_3);
