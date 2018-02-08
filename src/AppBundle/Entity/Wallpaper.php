@@ -32,6 +32,13 @@ class Wallpaper
     /**
      * @var string
      *
+     * @ORM\Column(name="file", type="string")
+     */
+    private $file;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="filename", type="string", length=255)
      */
     private $filename;
@@ -90,6 +97,30 @@ class Wallpaper
     public function getCategory()
     {
         return $this->category;
+    }
+
+    /**
+     * Set file.
+     *
+     * @param $file
+     *
+     * @return $this
+     */
+    public function setFile($file)
+    {
+        $this->file = $file;
+
+        return $this;
+    }
+
+    /**
+     * Get file.
+     *
+     * @return string
+     */
+    public function getFile()
+    {
+        return $this->file;
     }
 
     /**
@@ -186,5 +217,21 @@ class Wallpaper
     public function getHeight()
     {
         return $this->height;
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->filename;
+    }
+
+    /**
+     * @return string
+     */
+    public function getImage()
+    {
+        return $this->filename;
     }
 }

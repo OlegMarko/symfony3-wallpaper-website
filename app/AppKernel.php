@@ -18,8 +18,9 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
             new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
-
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+            //new JavierEguiluz\Bundle\EasyAdminBundle\EasyAdminBundle(),
+            new EasyCorp\Bundle\EasyAdminBundle\EasyAdminBundle(),
 
             new AppBundle\AppBundle(),
         ];
